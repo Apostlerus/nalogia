@@ -1,0 +1,1 @@
+select i.* from (Select storage_id, category_id, quantity from incoming order by `time` DESC) as i group by i.storage_id, i.category_id  order by i.storage_id, i.category_id 
